@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f27798f3-0529-4852-9e9c-819699a772cb</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ConcurrentAsyncQueue.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)00.Utilities\DateTimeHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)00.Utilities\LockHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)00.Utilities\StringsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\DynamicJson\DynamicJson.00.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\DynamicJson\DynamicJson.01.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonFileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonHelper\JsonHelper.00.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonHelper\JsonHelper.01.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonHelper\JsonHelper.02.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonHelper\JsonHelper.03.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonHelper\JsonHelper.04.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JsonReaderHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\JTokenWrapper\JTokenWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\KeyValueNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\ActivityFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\CommonJsonIoActivities\AbstractDynamicJsonIoActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\CommonJsonIoActivities\AbstractJTokenIoActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\CommonJsonIoActivities\AbstractJTokenWrapperIoActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\CommonJsonIoActivities\AbstractWaitableActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkFlow\WorkFlowHelper.cs" />
+  </ItemGroup>
+</Project>

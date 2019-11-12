@@ -1,0 +1,10 @@
+﻿language: csharp
+sudo: required
+
+dist: xenial
+mono: none
+dotnet: 3.0.100
+install:
+- dotnet restore CommonUtilities.NET.Core.Standard.3.0.sln
+script:
+- dotnet build CommonUtilities.NET.Core.Standard.3.0.sln
